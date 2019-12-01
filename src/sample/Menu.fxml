@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="776.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Menu">
+   <children>
+      <ImageView fitHeight="782.0" fitWidth="1090.0">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <effect>
+            <GaussianBlur radius="17.68" />
+         </effect>
+      </ImageView>
+      <Accordion layoutX="-167.0" layoutY="-79.0" />
+      <Button layoutX="429.0" layoutY="245.0" mnemonicParsing="false" onAction="#event_new" prefHeight="83.0" prefWidth="209.0" text="New Game" />
+      <Button layoutX="429.0" layoutY="391.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="209.0" text="Load Game" />
+      <Button layoutX="429.0" layoutY="522.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="209.0" text="Choose Level" />
+      <Button layoutX="429.0" layoutY="660.0" mnemonicParsing="false" onAction="#event_exit" prefHeight="83.0" prefWidth="209.0" text="Exit" />
+   </children>
+</AnchorPane>

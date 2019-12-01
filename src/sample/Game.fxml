@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+   <children>
+      <ImageView fitHeight="738.0" fitWidth="1061.0" layoutX="-13.0">
+         <image>
+            <Image url="@Lawn.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="975.0" layoutY="14.0" mnemonicParsing="false" onAction="#event_options" text="Options">
+         <effect>
+            <Glow level="0.29" />
+         </effect>
+      </Button>
+      <HBox layoutY="4.0" prefHeight="82.0" prefWidth="252.0">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sun.gif" />
+               </image>
+            </ImageView>
+            <TextArea opacity="0.86" prefHeight="82.0" prefWidth="115.0" style="-fx-background-color: green;" text="Sunflowers">
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+            </TextArea>
+         </children>
+      </HBox>
+      <ProgressBar layoutX="367.0" layoutY="14.0" prefHeight="23.0" prefWidth="408.0" progress="0.12" />
+      <VBox layoutY="86.0" prefHeight="653.0" prefWidth="164.0" style="-fx-background-color: brown;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="149.0">
+               <children>
+                  <ImageView fx:id="shooters" fitHeight="86.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pea_shooter.gif" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#fff400" strokeType="OUTSIDE" strokeWidth="0.0" text="Shooters" textAlignment="CENTER" wrappingWidth="162.6708984375">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="150.0" prefWidth="149.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="150.0" prefWidth="149.0">
+                     <children>
+                        <ImageView fx:id="barriers" fitHeight="88.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@walnut_full_life.gif" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#fff400" strokeType="OUTSIDE" strokeWidth="0.0" text="Barriers" textAlignment="CENTER" wrappingWidth="162.6708984375">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="150.0" prefWidth="149.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="150.0" prefWidth="149.0">
+                     <children>
+                        <ImageView fx:id="sunflower" fitHeight="91.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sun_flower.gif" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#fff400" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunflower" textAlignment="CENTER" wrappingWidth="162.6708984375">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="149.0">
+               <children>
+                  <ImageView fx:id="bombs" fitHeight="77.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Bomb.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#fff400" strokeType="OUTSIDE" strokeWidth="0.0" text="Bombs" textAlignment="CENTER" wrappingWidth="162.6708984375">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="812.0" layoutY="339.0" prefHeight="105.0" prefWidth="88.0" />
+      <ImageView fx:id="zombie" layoutX="931.0" layoutY="283.0">
+         <image>
+            <Image url="@zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie1" layoutX="775.0" layoutY="216.0">
+         <image>
+            <Image url="@zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun" fitHeight="82.0" fitWidth="88.0" layoutX="338.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sun.gif" />
+         </image>
+      </ImageView>
+      <Group layoutX="571.0" layoutY="413.0" />
+      <ImageView fx:id="im" fitHeight="113.0" fitWidth="96.0" layoutX="333.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im1" fitHeight="113.0" fitWidth="96.0" layoutX="252.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im11" fitHeight="113.0" fitWidth="96.0" layoutX="262.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im12" fitHeight="113.0" fitWidth="96.0" layoutX="262.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="im13" fitHeight="113.0" fitWidth="96.0" layoutX="423.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
